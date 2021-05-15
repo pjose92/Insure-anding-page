@@ -1,53 +1,448 @@
-* {
+*{
     padding: 0;
     margin: 0;
-    /* remove when doen  */
-    border: 2px solid rgb(223, 230, 224);
-
 }
-
-html, body {
-    font: 16px;
+html, body{
+    font: 16/1.5;
+    font-family: 'Karla', sans-serif;
     overflow-x: hidden;
-    /* remove when doen  */
-    border: 2px solid blue;
-    background-color: rgb(111, 93, 134);
 }
 
-.container {
+.container{
     width: 80%;
     margin: auto;
     text-align: center;
     overflow: hidden;
-    /* remove when done */
-    border: 1px solid red;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family:'Courier New', Courier, monospace;
+h1, h2, h3, h4, h5{
+    font-family: 'DM Serif Display', serif;
 }
 
-h1 {
+h1{
     font-weight: 400;
     font-size: 60px;
 }
-
-button {
+button{
+    font-family: 'Karla', sans-serif;
     border: 1px solid black;
     padding: 12px 30px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     display: inline-block;
     background: transparent;
+    text-transform: uppercase;
     cursor: pointer;
     font-weight: 700;
 }
 
-button:hover, a:hover {
+button:hover, a:hover{
     cursor: pointer;
 }
-
-a:hover {
+a:hover{
     cursor: pointer;
     color: black;
 }
+
+hr{
+    width: 200px;
+    margin-left: 0px;
+}
+
+header .container{
+    min-height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a{
+    color: hsl(273, 4%, 51%);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 15px;
+    font-weight: 400;
+    cursor: default;
+}
+
+.menu-button{
+    display: none;
+}
+
+#purple-background {
+    background-color:hsl(256, 26%, 20%);
+    display: block;
+    position: relative;
+}
+
+#showcase .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    color: white;
+}
+
+#showcase-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+}
+
+#showcase-text button{
+    margin-top: 15px;
+    border: 1px solid white;
+    color: white;
+}
+
+#showcase-text h1, #showcase-text p, #showcase-text button{
+    margin-top: 30px;
+}
+
+#showcase .people-img{
+    height:  450px;
+    right: 130px;
+}
+
+#showcase .people-img-mob{
+    display: none;
+}
+
+#design-1{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    height: 360px;
+  }
+
+#design-2{
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    z-index: 1;
+    height: 360px;
+    overflow: visible;
+  }
+
+#design-1-mob, #design-2-mob{
+      display: none;
+  }
+
+#were-different{
+    margin-top: 100px;
+}
+
+#were-different hr{
+    height: 0px;
+    border: none;
+    border-top: 1px solid hsl(273, 4%, 51%);
+    margin-bottom: 30px;
+}
+
+.boxes{
+    margin-top: 50px;
+    display: flex;
+    align-self: auto;
+    justify-content: space-around;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#were-different .box img, #were-different h4, #were-different .box p{
+    margin: 8px;
+}
+
+#were-different .box img{
+    height: 60px;
+}
+
+#how-we-work-card{
+    position: relative;
+    margin-top: 100px;
+    background: hsl(256, 26%, 20%);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+#how-we-work-card h1{
+    margin: 10px;
+    font-size: 50px ;
+    width: 50%;
+}
+
+#how-we-work-card button{
+    color: white;
+    border-color: white;
+    margin-right: 40px;
+}
+
+#design-3{
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+  }
+
+#footer-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: auto;
+      background:hsl(0, 0%, 98%);
+      margin-top: 100px;
+      padding: 80px;
+      margin-bottom: 20px;
+  }
+
+ .social{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: flex-start;
+ }
+ .social ul li{
+     display: inline;
+     margin-left: 5px ;
+ }
+
+ #footer-card hr{
+     width: 100%;
+     margin-top: 10px;
+     margin-bottom: 10px;
+    height: 0px;
+    border: none;
+    border-top: 1px solid hsl(273, 4%, 51%);
+
+ }
+
+ #footer-card .box h6{
+     color: hsl(273, 4%, 51%);
+     margin-bottom: 10px;
+ }
+
+ #footer-card .box ul{
+     list-style-type: none;
+     font-weight: 400;
+ }
+
+ #footer-card .box ul li{
+    margin-top: 10px;
+}
+
+
+ /* media queries */
+@media(max-width: 700px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header .container {
+        min-height: 75px;
+        display: inline-block;
+        position: relative;
+    }
+
+    header #branding {
+        display: inline;
+        position: absolute;
+        margin: 20px;
+        left: 0;
+        margin: 30 30 30 20;
+    }
+
+     .menu-button{
+        display: inline;
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        font-size: 26px;
+     }
+
+     nav {
+         position: fixed;
+         z-index: 10;
+         top: 70px;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+         height: 30%;
+         background-color: #fff; text-align: center;
+         display: none;
+     }
+
+     nav a {
+        padding: 0;
+         margin: 10px;
+         border-bottom: 1px solid grey;
+     }
+
+
+     .open {
+         display: flex !important;
+     }
+
+     
+    #toggle{
+       display: none;
+    }    
+
+    #showcase .container{
+       padding: 0;
+       flex-direction: column-reverse; 
+        align-items: center;
+       
+    }
+
+    #showcase-text{
+      
+       width: 90%;
+       overflow: hidden;
+       margin-top: 50px;
+       margin-bottom: 50px;
+       align-items: center;
+       text-align: center;
+    }
+
+    #showcase-text hr{
+       display: none;
+    }
+
+    #showcase-text h1{
+        font-size: 40px;
+        margin: 0;
+    }
+
+    #design-1, #design-2, #design-3{
+        display: none;
+    }
+ 
+    #showcase .people-img{
+        display: none;
+    }
+
+    #showcase .people-img-mob{
+        display: block;
+    }
+    /*were different 3 sections*/
+    #were-different .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 95vw;
+        margin: 0 10px;
+    }      
+
+    .boxes{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .box{
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #how-we-work-card{
+        text-align: center;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    #how-we-work-card h1{
+        margin: 0px;
+        font-size: 25px;
+    }
+
+    #how-we-work-card button{
+        margin-top: 30px;
+        margin-right: 0px;
+    }
+
+    /*footer*/
+    #footer-card{
+        margin-top: 30px;
+        padding: 20px;
+        margin-bottom: 0px;
+    }
+
+    .social{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .social ul{
+        padding-top: 10px;
+        display: inline;
+    }
+
+    #footer-card .boxes{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    #footer-card hr{
+        margin-top: 30px;
+    }
+}
+
+ /* animations */
+ .main-heading {
+    opacity: 0;
+    animation: slideUp .8s forwards .3s;
+ }
+
+ .para, #view-plans-btn {
+    opacity: 0;
+    animation: fade.5s forwards 1s;
+ }
+
+ .people-img, .people-img-mob {
+    opacity: 0;
+    animation: scale 1s forwards .5s;
+ }
+
+ @keyframes slideUp {
+     0% {
+        transform: translateY(100px);
+     }
+     100% {
+        transform: translateY(0);
+        opacity: 1;
+     }
+ }
+
+ @keyframes fade {
+     100% {
+         opacity: 1;
+     }
+ }
+
+@keyframes scale {
+    0% {
+        scale: 0;
+     }
+    100% {
+        opacity: 1;
+        scale: 1;
+     }
+ }
