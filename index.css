@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* remove when doen  */
+    border: 2px solid rgb(223, 230, 224);
+
+}
+
+html, body {
+    font: 16px;
+    overflow-x: hidden;
+    /* remove when doen  */
+    border: 2px solid blue;
+    background-color: rgb(111, 93, 134);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    /* remove when done */
+    border: 1px solid red;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+}
+
+button {
+    border: 1px solid black;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover, a:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
+    color: black;
+}
